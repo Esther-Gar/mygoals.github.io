@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAG</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            background-color: aliceblue;
+            
+        }
+
+        @media (min-width: 768px) {
+            .main {
+            margin: 0;
+            padding: 1rem 4rem 1rem 4rem;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            align-items: start;
+            gap: 3rem;
+        }
+
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .profile img {
+            float: right;
+            margin-top: 5rem;
+            
+        }
+
+        .info {
+            text-align: center;
+            font-size: larger;
+            line-height: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .info h4 {
+            color: darkmagenta;
+            font-size: x-large;
+            
+        }
+
+        .content {
+            background-color: rgb(241, 220, 241);
+            padding: 3rem;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .content h1 {
+            color: darkmagenta;
+            font-size: x-large;
+            justify-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .content h2 {
+            font-size: x-large;
+            text-align: center;
+            padding: 2rem;
+            color: darkmagenta;
+        }
+
+        .content p {
+            font-size: large;
+            
+        }
+
+        .content li {
+            font-size: larger;
+            line-height: 2.5rem;
+        }
+
+        .links{
+            margin-left: 15%;
+            display: flex;
+            list-style-type: none;
+        }
+
+        .links a {
+            padding: 1rem;
+            text-decoration: solid;
+            font-weight: bold;
+            color: darkmagenta;
+        }
+
+        .links a:hover {
+            background-color: rgb(241, 220, 241);
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="profile"> <!--image dimension 400*400-->
+            <img src="profile-image.jpg" alt="profile-image" data-testid="slackProfilePicture">
+
+            <div class="info">
+                <h4 id="slackDisplayName" data-testid="slackDisplayName">Garspride</H4>
+                <p id="Email" data-testid="slackEmail">bamgboseesther3@gmail.com</p>
+                <p data-testid="currentDay">Current Day: <span id="currentDay"></span></p>
+                <p data-testid="currentTimeUTC">Current Time (UTC): <span id="currentTimeUTC"></span></p>
+            </div>
+        </div>
+
+        
+        <div class="content">
+            <h1>How It All Started</h1>
+
+            <p>I have always had the passion for beautification. Anything at all, as long as I can transform it into something beautiful and pleasant to the eyes.
+                I discovered software development from watching someone close to me create beautiful websites from scratch. I wanted to try my hands on this, but of course,
+                I was not sure how it would go. I just had to START!<br>
+                <br>
+                Today, I am moving at a pace I did not even expect. Learning, growing, and meeting people with like minds.
+            </p>
+
+            <h2>My Tech Goal for the Next Two Years</h2>
+
+            <p>My tech journey has been challenging, but great so far. Projecting the next two years, I plan to grow steadily.<br>
+                <ul>
+                    <li>Strengthen my skills in frontend development</li>
+                    <li>Collaborate and volunteer on projects to build credibility</li>
+                    <li>Research and learn, keep learning</li>
+                    <li>Get mentors who are strong in the field</li>
+                    <li>Land that big job</li>
+                </ul>
+            </p>
+        </div>
+
+        
+    </div>
+
+    <div class="footer">
+        <div class="links">
+            <a href="https://hng.tech/learn" data-testid="hngLink">LEARN WITH HNG</a>
+            <a href="https://keyword.dog/" data-testid="keywordLink">KEYWORD</a>
+            <a href="https://scrapeanyweb.site/" data-testid="scrapeanywebLink">SCRAPE ANY WEB</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
